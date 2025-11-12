@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Page Nahi Mila, Bhai!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+      z-index: 10;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .error-code {
+      font-size: 12rem;
+      font-weight: 900;
+      letter-spacing: 10px;
+      text-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+      animation: pulse 2s infinite;
+    }
+
+    .error-msg {
+      font-size: 2rem;
+      margin: 20px 0;
+      font-weight: 600;
+    }
+
+    .sub-msg {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #a0d8ff;
+    }
+
+    .btn-home {
+      background: #ff6b6b;
+      color: white;
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(255, 107, 107, 0.4);
+    }
+
+    .btn-home:hover {
+      background: #ff4757;
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(255, 71, 87, 0.5);
+    }
+
+    /* Floating Shapes */
+    .shape {
+      position: absolute;
+      opacity: 0.1;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .circle { width: 80px; height: 80px; background: #4ecdc4; border-radius: 50%; }
+    .square { width: 60px; height: 60px; background: #f7b731; transform: rotate(45deg); }
+    .triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 40px solid transparent; border-bottom: 70px solid #a55eea; }
+
+    /* Animations */
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(10deg); }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .error-code { font-size: 6rem; letter-spacing: 5px; }
+      .error-msg { font-size: 1.5rem; }
+      .sub-msg { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="shape circle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+  <div class="shape square" style="top: 20%; right: 15%; animation-delay: 1s;"></div>
+  <div class="shape triangle" style="bottom: 15%; left: 20%; animation-delay: 2s;"></div>
+  <div class="shape circle" style="bottom: 25%; right: 10%; animation-delay: 3s;"></div>
+
+  <div class="container">
+    <div class="error-code">404</div>
+    <div class="error-msg">Arre! Page Nahi Mila!</div>
+    <div class="sub-msg">Lagta hai galat link daba diya. Ghar chalo, chai peete hain.</div>
+    <button class="btn-home" onclick="window.location.href='/'">Ghar Chalo</button>
+  </div>
+
+</body>
+</html>

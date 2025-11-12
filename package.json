@@ -1,5 +1,26 @@
 {
+  "name": "express-2025",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit60dx/express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit60dx/express/issues"
+  },
+  "homepage": "https://github.com/rohit60dx/express#readme",
+  "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10"
   }
 }
