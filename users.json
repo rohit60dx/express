@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Rohit Kumar",
+        "age": 24,
+        "email": "test@gmail.com"
+    },
+    {
+        "id": 2,
+        "name": "Ankit Sharma",
+        "age": 26,
+        "email": "test1@gmail.com"
+    },
+    {
+        "id": 3,
+        "name": "Suresh Raina",
+        "age": 28,
+        "email": "test2@gmail.com"
+    },
+    {
+        "id": 4,
+        "name": "MS Dhoni",
+        "age": 34,
+        "email": "test3@gmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Virat Kohli",
+        "age": 30,
+        "email": "test4@gmail.com"
+    },
+    {
+        "id": 6,
+        "name": "Hardik Pandya",
+        "age": 27,
+        "email": "test5@gmail.com"
+    },
+    {
+        "id": 7,
+        "name": "Rishabh Pant",
+        "age": 23,
+        "email": "test6@gmail.com"
+    },
+    {
+        "id": 8,
+        "name": "Jasprit Bumrah",
+        "age": 28,
+        "email": "test7@gmail.com"
+    },
+    {
+        "id": 9,
+        "name": "Shikhar Dhawan",
+        "age": 32,
+        "email": "test8@gmail.com"
+    }, 
+    {
+        "id": 10,
+        "name": "Yuzvendra Chahal",
+        "age": 29,
+        "email": "test9@gmail.com"
+    }
+]
