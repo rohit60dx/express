@@ -48,7 +48,6 @@ app.get("/contact", (req, resp) => {
 
 app.get("/service", (req, resp) => {
      sendPage(resp, "/service.html");
-    // resp.sendFile(absPath + "/service.html" );
 });
 
 
